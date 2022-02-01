@@ -30,7 +30,7 @@ public class calculadora {
 				System.out.print("\nAhora ingrese el 2do numero: ");
 				num2 = opt.nextInt();
 				resultado = num1 + num2;
-				System.out.print("\nEl resultado de la suma es: "+resultado);
+				System.out.print("\nEl resultado de la suma es: "+ resultado);
 				break;
 			
 			//Resta
@@ -40,7 +40,7 @@ public class calculadora {
 				System.out.print("\nAhora ingrese el 2do numero: ");
 				num2 = opt.nextInt();
 				resultado = num1 - num2;
-				System.out.print("\nEl resultado de la resta es: "+resultado);
+				System.out.print("\nEl resultado de la resta es: "+ resultado);
 				break;
 			
 			//Multiplicacion
@@ -50,7 +50,7 @@ public class calculadora {
 				System.out.print("\nAhora ingrese el 2do numero: ");
 				num2 = opt.nextInt();
 				resultado = num1 * num2;
-				System.out.print("\nEl resultado de la multiplicacion es: "+resultado);
+				System.out.print("\nEl resultado de la multiplicacion es: "+ resultado);
 				break;
 			
 			//Division aqui ya que el resultado puede dar decimales, se declara las variables como FLOAT
@@ -60,7 +60,7 @@ public class calculadora {
 				System.out.print("\nAhora ingrese el 2do numero: ");
 				float b = opt.nextInt();
 				float res = a/b;
-				System.out.print("\nEl resultado de la division es: "+res);
+				System.out.print("\nEl resultado de la division es: "+ res);
 				break;
 			
 			//Caso en caso de ingresar otro numero
