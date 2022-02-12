@@ -16,8 +16,8 @@ public class UsoMoto {
 			Duke.Postura("Crucero");
 			Duke.Tipo("Ciclomotor");
 			Duke.Marca("Alfa Romeo");
-			Duke.Compartimiento(true);
-			Duke.DobleTubo(false);
+			Duke.Compartimiento("si");
+			Duke.DobleTubo("no");
 			
 			
 		System.out.println(Duke.dimeColor());

@@ -8,8 +8,8 @@ public class UsoCoche {
 
 			Renault.estableceColor("Amarillo");
 			Renault.estableceMotor(1800);
-			Renault.estableceClimatizador(true);
-			Renault.estableceAsientosCuero(false);
+			Renault.estableceClimatizador("si");
+			Renault.estableceAsientosCuero("no");
 			Renault.establecePesoTotal(4000);
 			
 			

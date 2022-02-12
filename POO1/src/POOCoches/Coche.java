@@ -108,12 +108,28 @@ public class Coche {
 		pesoTotal=pesoTotalCoche;
 	}
 	
-	public void estableceAsientosCuero(boolean asientosCueroCoche) {
-		asientosCuero=asientosCueroCoche;
+	public void estableceAsientosCuero(String asientosCueroCoche) {
+		
+		if (asientosCueroCoche.equalsIgnoreCase("Si")) {
+			
+			this.asientosCuero=true;
+		}
+		else{
+			
+			this.asientosCuero=false;
+		}
 	}
 	
-	public void estableceClimatizador(boolean ClimatizadorCoche) {
-		Climatizador=ClimatizadorCoche;
+	public void estableceClimatizador(String ClimatizadorCoche) {
+		
+		if (ClimatizadorCoche.equalsIgnoreCase("Si")) {
+			
+			this.Climatizador=true;
+		}
+		else{
+			
+			this.Climatizador=false;
+		}
 	}
 	
 }

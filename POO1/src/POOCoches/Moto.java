@@ -124,12 +124,28 @@ public class Moto {
 		postura=posturaMoto;
 	}
 	
-	public void Compartimiento(boolean compartimientoMoto) {
-		compartimiento=compartimientoMoto;
+	public void Compartimiento(String compartimientoMoto) {
+		
+		if (compartimientoMoto.equalsIgnoreCase("Si")) {
+			
+			this.compartimiento=true;
+		}
+		else{
+			
+			this.compartimiento=false;
+		}
 	}
 	
-	public void DobleTubo(boolean dobleTuboMoto) {
-		dobletubo=dobleTuboMoto;
+	public void DobleTubo(String dobleTuboMoto) {
+		
+		if (dobleTuboMoto.equalsIgnoreCase("Si")) {
+			
+			this.dobletubo=true;
+		}
+		else{
+			
+			this.dobletubo=false;
+		}
 	}
 
 }

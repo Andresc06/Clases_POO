@@ -116,11 +116,27 @@ public class Camioneta {
 		marca=marcaCamioneta;
 	}
 	
-	public void cuatroXcuatro(boolean cuatroXcuatroCamioneta) {
-		cuatroXcuatro=cuatroXcuatroCamioneta;
+	public void cuatroXcuatro(String cuatroXcuatroCamioneta) {
+		
+		if (cuatroXcuatroCamioneta.equalsIgnoreCase("Si")) {
+			
+			this.cuatroXcuatro=true;
+		}
+		else{
+			
+			this.cuatroXcuatro=false;
+		}
 	}
 	
-	public void DeteccionPeatones(boolean deteccionPeatonesCamioneta) {
-		deteccionPeatones=deteccionPeatonesCamioneta;
+	public void DeteccionPeatones(String deteccionPeatonesCamioneta) {
+		
+		if (deteccionPeatonesCamioneta.equalsIgnoreCase("Si")) {
+			
+			this.deteccionPeatones=true;
+		}
+		else{
+			
+			this.deteccionPeatones=false;
+		}
 	}
 }

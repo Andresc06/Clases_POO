@@ -15,8 +15,8 @@ public class UsoCamioneta {
 			Colorado.Motor(2150);
 			Colorado.Tipo("Pickup");
 			Colorado.Marca("Chevrolet");
-			Colorado.cuatroXcuatro(true);
-			Colorado.DeteccionPeatones(true);
+			Colorado.cuatroXcuatro("si");
+			Colorado.DeteccionPeatones("si");
 			
 			
 		System.out.println(Colorado.dimeColor());
