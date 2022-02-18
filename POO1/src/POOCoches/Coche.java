@@ -28,6 +28,18 @@ public class Coche {
 		
 	}
 	
+	
+	
+	//Datos Generales
+	public String dimeDatos() {
+		return "Su coche tiene un largo de " + largo + " cm " + "y de ancho " + ancho + " cm.\n" + "El coche es de color " + color + ", con un motor de " + motor + " cc.\n" + "Tiene " + ruedas + " ruedas," + " un peso de " + peso + " kg " + "(plataforma: " + pesoPlataforma + " kg)";
+	}
+	
+	
+	
+	
+	
+	
 	//Getter
 	public String dimeLargo() {
 		return "El largo del coche es: "+ largo + " centimetros";
@@ -74,6 +86,7 @@ public class Coche {
 		else
 			return "El coche no tiene climatizador";
 	}
+	
 	
 	//Setters
 	public void estableceColor(String colorCoche) {

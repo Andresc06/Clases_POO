@@ -2,14 +2,13 @@ package POOCoches;
 
 public class Moto {
 	
-	private int tanque;
 	private int largo;
 	private int ancho;
 	private int motor;
 	private int peso;
 	private int maxvelocidad;
 	
-	String postura, tipo, marca, color;
+	String postura, tipo, marca, color, tanque;
 	boolean compartimiento, dobletubo;
 	
 	
@@ -17,7 +16,6 @@ public class Moto {
 	
 	public Moto() {
 		
-		tanque = 8;
 		largo = 1700;
 		ancho = 700;
 		motor = 150;
@@ -25,6 +23,19 @@ public class Moto {
 		maxvelocidad = 110;
 		
 	}
+	
+	
+	
+	
+	//Datos Generales
+	public String dimeDatos() {
+		return "Su moto tiene un largo de " + largo + " cm " + "y ancho " + ancho + " cm.\n" + "La moto es de color " + color + ", con un motor de " + motor + " cc.\n" + "Tipo: " + tipo + ", Marca: " + marca + "Tanque de " + tanque + "\nLa postura es de tipo " + postura + " con velocidad max: " + maxvelocidad + " km/h";
+	}
+	
+	
+	
+	
+	
 	
 	//Getter
 	public String dimeLargo() {
@@ -88,7 +99,7 @@ public class Moto {
 		color=colorMoto;
 	}
 	
-	public void Tanque(int tanqueMoto) {
+	public void Tanque(String tanqueMoto) {
 		tanque=tanqueMoto;
 	}
 

@@ -9,7 +9,7 @@ public class Camioneta {
 	private int peso;
 	private int puertas;
 	
-	String color, tipo, marca;
+	String color, marca, modelo;
 	boolean cuatroXcuatro, deteccionPeatones;
 	
 	
@@ -25,6 +25,16 @@ public class Camioneta {
 		nroAsientos = 4;
 		
 	}
+	
+	
+	
+	//Datos Generales
+	public String dimeDatos() {
+		return "Su camioneta tiene un largo de " + largo + " cm " + "y ancho " + ancho + " cm.\n" + "La camioneta es de color " + color + ", con un motor de " + motor + " cc.\n" + "Modelo: " + modelo + ", Marca: " + marca + "\nTiene " + nroAsientos + " asientos" + " y " + puertas + " puertas";
+	}
+	
+	
+	
 	
 	//Getter
 	public String dimeLargo() {
@@ -55,8 +65,8 @@ public class Camioneta {
 		return "El color de la camioneta es "+ color;
 	}
 	
-	public String dimeTipo() {
-		return "La camioneta es de tipo " + tipo;
+	public String dimeModelo() {
+		return "La camioneta es de modelo " + modelo;
 	} 
 	
 	public String dimeMarca() {
@@ -108,8 +118,8 @@ public class Camioneta {
 		peso=pesoCamioneta;
 	}
 
-	public void Tipo(String tipoCamioneta) {
-		tipo=tipoCamioneta;
+	public void Modelo(String modeloCamioneta) {
+		modelo=modeloCamioneta;
 	}
 	
 	public void Marca(String marcaCamioneta) {
