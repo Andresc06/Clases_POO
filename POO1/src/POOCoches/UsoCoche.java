@@ -9,10 +9,13 @@ public class UsoCoche {
 			Coche Renault = new Coche();
 
 			Renault.estableceColor(JOptionPane.showInputDialog("Ingrese el color del coche"));
-			Renault.estableceMotor(1800);
+			Renault.estableceLargo(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el largo en cm del coche")));
+			Renault.estableceAncho(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el ancho en cm del coche")));
+			Renault.estableceMotor(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el cc del motor")));
 			Renault.estableceClimatizador(JOptionPane.showInputDialog("Desea climatizador en su coche?"));
 			Renault.estableceAsientosCuero(JOptionPane.showInputDialog("Desea asientos de cuero en su coche?"));
-			Renault.establecePesoTotal(4000);
+			Renault.establecePeso(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el peso en kg del coche")));
+			Renault.establecePesoPlataforma(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el peso de la plataforma en kg del coche")));
 			
 			
 		System.out.println("********************Datos del Coche********************");

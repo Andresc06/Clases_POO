@@ -10,11 +10,10 @@ public class UsoMoto {
 
 			Duke.Color(JOptionPane.showInputDialog("Ingrese el color de la moto"));
 			Duke.Tanque(JOptionPane.showInputDialog("Ingrese la capacidad en litros del tanque de su moto"));
-			Duke.Ancho(680);
-			Duke.Largo(1620);
-			Duke.Peso(194);
-			Duke.Motor(165);
-			Duke.MaxVelocidad(120);
+			Duke.Ancho(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el ancho en cm de la moto")));
+			Duke.Largo(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el largo en cm de la moto")));
+			Duke.Peso(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el peso en kg de la moto")));
+			Duke.Motor(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los cc de la moto")));
 			Duke.Postura(JOptionPane.showInputDialog("Que postura desea? Disponibles: Crucero, estandar o deportiva"));
 			Duke.Tipo(JOptionPane.showInputDialog("Que tipo de moto desea?"));
 			Duke.Marca(JOptionPane.showInputDialog("Ingrese la marca de la moto"));

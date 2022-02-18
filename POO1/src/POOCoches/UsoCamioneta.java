@@ -10,11 +10,11 @@ public class UsoCamioneta {
 
 			Colorado.Color(JOptionPane.showInputDialog("Ingrese el color de la camioneta"));
 			Colorado.Puertas(4);
-			Colorado.NroAsientos(6);
-			Colorado.Ancho(1750);
-			Colorado.Largo(3200);
-			Colorado.Peso(3142);
-			Colorado.Motor(2150);
+			Colorado.NroAsientos(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nro de asientos de la camioneta")));
+			Colorado.Ancho(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el ancho en cm de la camioneta")));
+			Colorado.Largo(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el largo en cm de la camioneta")));
+			Colorado.Peso(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el peso en kg de la camioneta")));
+			Colorado.Motor(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los cc del motor de la camioneta")));
 			Colorado.Modelo(JOptionPane.showInputDialog("Ingrese el modelo de la camioneta"));
 			Colorado.Marca(JOptionPane.showInputDialog("Ingrese la marca de la camioneta"));
 			Colorado.cuatroXcuatro(JOptionPane.showInputDialog("Desea que su camioneta sea 4x4?"));
