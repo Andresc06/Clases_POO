@@ -7,7 +7,8 @@ public class carga extends vehiculoAereo{
 			private String modelo;
 			private boolean estabilizador; //Hace que el avion tenga un estabilizador de carga para evitar dañarlas
 			private boolean puertaDoble; //Hace que el avion tenga doble puerta para facilitar la carga y descarga
-
+			private int paquetesCabina;
+			private int lucesInternas;
 			
 			//Metodo Constructor de un Avion de carga general
 		    public carga(){
@@ -17,6 +18,14 @@ public class carga extends vehiculoAereo{
 		    //Setter
 		    public void s_modelo(String model) {
 				modelo = model;
+			}
+		    
+		    public void s_paquetesCabina(int paquetes) {
+				paquetesCabina = paquetes;
+			}
+		    
+		    public void s_lucesInternas(int luces) {
+				lucesInternas = luces;
 			}
 		    
 		    public void s_estabilizador(String stabilizator) {
@@ -47,6 +56,8 @@ public class carga extends vehiculoAereo{
 		    //Datos Especificos Avion de carga
 		    public void g_carga() {
 		    	g_modelo();
+		    	g_paquetesCabina();
+		    	g_lucesInternas();
 		    	g_estabilizador();
 		    	g_puertaDoble();
 			}
@@ -54,6 +65,14 @@ public class carga extends vehiculoAereo{
 		    //Getter   
 		    public void g_modelo() {
 		    	System.out.println("Modelo del Avion de Carga: " + modelo);
+		    }
+		    
+		    public void g_lucesInternas() {
+		    	System.out.println("Cantidad de luces internas del Avion de Carga: " + lucesInternas);
+		    }
+		    
+		    public void g_paquetesCabina() {
+		    	System.out.println("Cantidad de paquetes por cabina del Avion de Carga: " + paquetesCabina);
 		    }
 		    
 		    public void g_estabilizador(){

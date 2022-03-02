@@ -7,7 +7,8 @@ public class helicoptero extends vehiculoAereo{
 		private String modelo; 
 		private boolean doblehelice; //Hace que despejar el helicoptero sea mas rapido
 		private boolean ventanasAntirruido; //Hace las ventanas tengan una capa antirruido para los pasajeros
-
+		private int mascarasOxigeno;
+		private int paracaidas;
 		
 		//Metodo Constructor de un helicoptero general
 	    public helicoptero(){
@@ -17,6 +18,14 @@ public class helicoptero extends vehiculoAereo{
 	    //Setter
 	    public void s_modelo(String model) {
 			modelo = model;
+		}
+	    
+	    public void s_paracaidas(int para) {
+			paracaidas = para;
+		}
+	    
+	    public void s_mascarasOxigeno(int mascaras) {
+			mascarasOxigeno = mascaras;
 		}
 	    
 	    public void s_doblehelice(String helice) {
@@ -47,6 +56,8 @@ public class helicoptero extends vehiculoAereo{
 	    //Datos Especificos Helicoptero
 	    public void g_helicoptero() {
 	    	g_modelo();
+	    	g_mascarasOxigeno();
+	    	g_paracaidas();
 	    	g_doblehelice();
 	    	g_ventanasAntirruido();
 		}
@@ -54,6 +65,14 @@ public class helicoptero extends vehiculoAereo{
 	    //Getter    
 	    public void g_modelo() {
 	    	System.out.println("Modelo del helicoptero: " + modelo);
+	    }
+	    
+	    public void g_mascarasOxigeno() {
+	    	System.out.println("Cantidad de mascaras de Oxigeno del Helicoptero: " + mascarasOxigeno);
+	    }
+	    
+	    public void g_paracaidas() {
+	    	System.out.println("Cantidad de paracaidas del Helicoptero: " + paracaidas);
 	    }
 	    
 	    public void g_doblehelice(){

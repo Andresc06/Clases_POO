@@ -7,7 +7,8 @@ public class avioneta extends vehiculoAereo{
 	private String modelo;
 	private boolean superAceleracion; //Hace que la aceleracion sea el doble del promedio
 	private boolean cabinaPresurizada; //Hace que los pasajeros tengan un compartimiento comodo para viajar en alta velocidad
-
+	private int flotadores;
+	private int asientos;
 	
 	//Metodo Constructor de una Avioneta general
     public avioneta(){
@@ -17,6 +18,14 @@ public class avioneta extends vehiculoAereo{
     //Setters
     public void s_modelo(String model) {
 		modelo = model;
+	}
+    
+    public void s_asientos(int asiento) {
+		asientos = asiento;
+	}
+    
+    public void s_flotadores(int flotador) {
+		flotadores = flotador;
 	}
     
     public void s_cabina(String cPresurizada) {
@@ -47,6 +56,8 @@ public class avioneta extends vehiculoAereo{
     //Datos Especificos Avioneta
     public void g_avioneta() {
     	g_modelo();
+    	g_flotadores();
+    	g_asientos();
     	g_superAceleracion();
     	g_cabina();
 	}
@@ -54,6 +65,14 @@ public class avioneta extends vehiculoAereo{
     //Getter   
     public void g_modelo() {
     	System.out.println("Modelo de la Avioneta: " + modelo);
+    }
+    
+    public void g_asientos() {
+    	System.out.println("Cantidad de asientos de la Avioneta: " + asientos);
+    }
+    
+    public void g_flotadores() {
+    	System.out.println("Cantidad de flotadores de la Avioneta: " + flotadores);
     }
     
     public void g_cabina(){

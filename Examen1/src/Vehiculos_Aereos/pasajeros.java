@@ -7,7 +7,8 @@ public class pasajeros extends vehiculoAereo{
 		private String modelo;
 		private boolean doblepiso; //Hace que el avion tenga dos pisos
 		private boolean calentador; //Hace que los pasajeros puedan tener la opcion de calentar sus asientos
-
+		private int tobogan;
+		private int puertas;
 		
 		//Metodo Constructor de un Avion de pasajeros general
 	    public pasajeros(){
@@ -17,6 +18,14 @@ public class pasajeros extends vehiculoAereo{
 	    //Setter
 	    public void s_modelo(String model) {
 			modelo = model;
+		}
+	    
+	    public void s_tobogan(int slide) {
+			tobogan = slide;
+		}
+	    
+	    public void s_puertas(int exit) {
+			puertas = exit;
 		}
 	    
 	    public void s_doblepiso(String piso) {
@@ -47,9 +56,19 @@ public class pasajeros extends vehiculoAereo{
 	    //Datos Especificos Avion de pasajeros
 	    public void g_pasajero() {
 	    	g_modelo();
+	    	g_tobogan();
+	    	g_puertas();
 	    	g_doblepiso();
 	    	g_calentador();
 		}
+	    
+	    public void g_tobogan() {
+	    	System.out.println("Cantidad de toboganes del Avion de Pasajeros: " + tobogan);
+	    }
+	    
+	    public void g_puertas() {
+	    	System.out.println("Cantidad de puertas del Avion de Pasajeros: " + puertas);
+	    }
 	    
 	    //Getter   
 	    public void g_modelo() {
